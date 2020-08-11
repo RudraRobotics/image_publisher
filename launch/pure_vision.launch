@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="my_image_transport" type="my_publisher" name="my_publisher" 
+        args="$(find my_image_transport)/Images/bird.jpg"/>
+    <node pkg="rviz" type="rviz" name="rviz" 
+        args="-d $(find my_image_transport)/rviz/pure_vision.rviz"/>
+</launch> 
